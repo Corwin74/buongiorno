@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+    
+    ],
+    
+    "python.linting.pylintArgs": [
+        "--load-plugins", "pylint_django", 
+        "--disable=missing-docstring",
+        "--django-settings-module=config.settings",
+    ],
+    "python.analysis.extraPaths": []
+    
+}
