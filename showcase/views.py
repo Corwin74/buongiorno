@@ -1,8 +1,11 @@
 
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
+from .models import Menu
 
 
-class HomePageView(TemplateView):
+class HomePageView(ListView):
+    model = Menu
+    context_object_name = 'menu_list'
     template_name = "home.html"
 
 

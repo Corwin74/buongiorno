@@ -1,11 +1,10 @@
-{% extends "_base.html" %}
-{% load static %}
-
-{% block title %}Home{% endblock title %}
-
+{% extends '_base.html' %}
+{% block title %}Menu{% endblock title %}
 {% block content %}
-
-
-  <h1>Menu:</h1>
- 
+<h1>Меню</h1>
+{% for product in menu_list %}
+<div>
+<h3>{{ product.name }}  {{ product.volume }}  {{ product.price }}</h3>
+</div>
+{% endfor %}
 {% endblock content %}
